@@ -1,0 +1,107 @@
+/* Basic Reset and Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the Form */
+.todo-container {
+    background-color: #ffffff; /* White background for the form area */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Limit the width */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: rgb(172, 172, 172); 
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: brown; 
+    color: white;
+}
+
+.submit-btn:active {
+    transform: translateY(1px); /* Little press effect */
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:link {
+    color: gray;        
+}
+
+a:visited {
+    color: gray;      
+}
+
+a:hover {
+    color: gray;       
+}
+
+a:active {
+    color: gray;      
+}
